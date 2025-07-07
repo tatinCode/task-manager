@@ -12,13 +12,16 @@ flags = -Wall -g
 target = main
 
 #for deletion of the target
-targetDel = $(target).exe
+targetDel = $(target)
 
 #source files
-srcs = main.cpp task.cpp
+##########
+###Add files here
+##########
+srcs = main.cpp
 
 #object files
-objs = $(srcs:.cpp = .o)
+objs = $(srcs:.cpp=.o)
 
 #deafult rule to build and run the executable 
 all: $(target)
@@ -33,8 +36,8 @@ $(target) : $(objs)
 
 #RUle to run the executable
 run: $(target)
-	$(target)
+	./$(target)
 
 #clean rule to remove generated files
 clean:
-	rm -f $(targetDel) $(objs)
+	rm -f $(target) $(objs)
