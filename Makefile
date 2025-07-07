@@ -9,7 +9,7 @@ CXX = g++
 flags = -Wall -g
 
 #target executable
-target = main
+target = task
 
 #for deletion of the target
 targetDel = $(target)
