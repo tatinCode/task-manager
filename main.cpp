@@ -16,6 +16,10 @@ int main(int argc, char* argv[]) {
 	}
 
 	//variables
+
+
+	
+	//for debugging
 	for(int i = 0; i < argc; i++){
 		printf("Argument #%d: %s\n", i, argv[i]);
 	}
