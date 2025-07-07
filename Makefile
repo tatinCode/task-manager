@@ -6,7 +6,7 @@
 CXX = g++
 
 #variables
-flags =  -Wall -g
+flags = -Wall -g
 
 #target executable
 target = main
@@ -18,10 +18,10 @@ targetDel = $(target).exe
 srcs = main.cpp task.cpp
 
 #object files
-objs = $(srcs.cpp = .o)
+objs = $(srcs:.cpp = .o)
 
 #deafult rule to build and run the executable 
-all: $(target) run
+all: $(target)
 	
 #Rule to link object files into the target executable
 $(target) : $(objs)
@@ -37,4 +37,4 @@ run: $(target)
 
 #clean rule to remove generated files
 clean:
-	del $(targetDel) $(objs)
+	rm -f $(targetDel) $(objs)

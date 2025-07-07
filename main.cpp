@@ -10,13 +10,13 @@
 
 int main(int argc, char* argv[]) {
 
-	if(argc < 2 && argv[2] != "list"){
+	if(argc < 2 && std::string(argv[2]) != "list"){
 		std::cout << "not enough arguments, must complete ./task <command> <string>\n";
 		return -1;
 	}
 
 	//variables
-	for(int i = 0; i < argc - 1;){
+	for(int i = 0; i < argc; i++){
 		printf("Argument #%d: %s\n", i, argv[i]);
 	}
 	
