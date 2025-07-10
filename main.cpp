@@ -8,21 +8,23 @@
 #include <string>
 #include <cctype>	//for to lower
 
-int main(int argc, char* argv[]) {
+#include task.h
 
-	if(argc < 2 && std::string(argv[2]) != "list"){
+int main(int argc, char* argv[]) {
+    Task task = new Task();
+
+	if(argc < 2 || argc > 3 && std::string(argv[2]) != "list"){
 		std::cout << "not enough arguments, must complete ./task <command> <string>\n";
 		return -1;
+
 	}
 
-	//variables
-
-
-	
 	//for debugging
 	for(int i = 0; i < argc; i++){
 		printf("Argument #%d: %s\n", i, argv[i]);
 	}
+
+
 	
 
 
