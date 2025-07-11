@@ -18,7 +18,7 @@ targetDel = $(target)
 ##########
 ###Add files here
 ##########
-srcs = main.cpp
+srcs = main.cpp task.cpp
 
 #object files
 objs = $(srcs:.cpp=.o)
