@@ -1,6 +1,6 @@
 #Make file for my first project which is about using chatGPT for project ideas
 #I used AI very sparingly for this project, mainly just for some syntax stuff
-#because I'm getting very 'rusty' kek.
+#because I'm getting very rusty.
 
 #compiler
 CXX = g++
