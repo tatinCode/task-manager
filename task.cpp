@@ -24,7 +24,7 @@ void addTask(const std::string& description){
 }
 
 void listTasks(){
-    auto tasks = loadTasks();
+    std::vector<task> tasks = loadTasks();
 
     if(tasks.empty()){
         std::cout << "No task found!\nreturning...";
@@ -125,10 +125,6 @@ void unmarkDone(int id){
 
     std::cout << "\nFailed to unmark task with id: " << id << "\n";
 }
-
-/**
- * 
- */
 
 std::vector<task> loadTasks(){
     std::vector<task> tasks;
