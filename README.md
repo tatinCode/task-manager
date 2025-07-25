@@ -7,4 +7,8 @@ just do
 to run, do ``./task <command> <name for add and type an id for everything>``
 
 ## Commands:
-add, remove/delete, mark, unmark, list
+`./task add <taskName>`
+`./task remove/delete <id#>`
+`./task mark <id#>`
+`./task unmark <id#>`
+`./task list <id#>`
